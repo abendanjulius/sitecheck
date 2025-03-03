@@ -165,7 +165,7 @@ def process_urls(df, api_key, search_engine_id, usage_data):
 
 
 # Hardcoded values
-API_KEY = "AIzaSyBWq9DsenwWQlB6zsNhK151ygfYHRUY_L8"
+API_KEY = ""
 SEARCH_ENGINE_ID = "8249476f72f974a92"
 
 # Streamlit UI
