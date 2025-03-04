@@ -10,6 +10,11 @@ import plotly.express as px
 import requests
 from PIL import Image
 from io import BytesIO
+import os
+from dotenv import load_dotenv
+
+# Load environment variables
+load_dotenv()
 
 
 # Function to load the profile picture
@@ -163,10 +168,9 @@ def process_urls(df, api_key, search_engine_id, usage_data):
 
     return df, indexed_count, not_indexed_count, error_count
 
-
-# Hardcoded values
-API_KEY = ""
-SEARCH_ENGINE_ID = "8249476f72f974a92"
+# Get API key from environment variables
+API_KEY = os.getenv("API_KEY")
+SEARCH_ENGINE_ID = os.getenv("SEARCH_ENGINE_ID")
 
 # Streamlit UI
 st.set_page_config(page_title="Google Index Checker", layout="wide")
