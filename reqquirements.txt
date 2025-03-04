@@ -4,3 +4,7 @@ plotly
 google-api-python-client
 requests
 Pillow
+urllib3
+python-dateutil
+pytz
+numpy
