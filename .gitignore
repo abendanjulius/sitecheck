@@ -1,0 +1,11 @@
+# Environment variables
+.env
+.streamlit/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Usage data
+api_usage.json
